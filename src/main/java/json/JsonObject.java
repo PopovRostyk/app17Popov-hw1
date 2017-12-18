@@ -50,8 +50,6 @@ public class JsonObject extends Json {
                 JsonPair jsonPair = new JsonPair(name, this.find(name));
                 jsonObject.add(jsonPair);
             }
-            //JsonPair jsonPair = new JsonPair(name, this.find(name));
-            //if (jsonPair.getValue() != null){jsonObject.add(jsonPair);}
         }
         return jsonObject;
     }

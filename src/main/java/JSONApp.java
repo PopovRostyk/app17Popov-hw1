@@ -36,8 +36,14 @@ public class JSONApp {
 
 
     public static JsonObject sessionResult() {
-        JsonObject jsonObject = null;
-        // ToDo
-        return jsonObject;
+        Student student = new Student(
+                "Andrii",
+                "Rodionov",
+                2,
+                new Tuple<>("OOP", 3),
+                new Tuple<>("English", 5),
+                new Tuple<>("Math", 2)
+        );
+        return student.toJsonObject();
     }
 }

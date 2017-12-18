@@ -1,8 +1,6 @@
 package json;
 
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Andrii_Rodionov on 1/3/2017.
@@ -29,5 +27,8 @@ public class JsonArray extends Json {
                 jsonStr += ", ";
         }
         return jsonStr;
+    }
+    public void add(Json json){
+        jsons.add(json);
     }
 }

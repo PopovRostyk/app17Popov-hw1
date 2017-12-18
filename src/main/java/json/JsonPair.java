@@ -5,20 +5,20 @@ package json;
  */
 public class JsonPair extends Tuple<String, Json>{
     private String name;
-    private String value;
+    private Json value;
     public JsonPair(String name, Json value) {
         super(name, value);
         this.name = name;
-        this.value = value.toJson();
+        this.value = value;
     }
     public String toJson(){
-        return "'" + name + "': " +  value ;
+        return "'" + name + "': " +  value.toJson();
     }
     public String getName() {
         return name;
     }
 
     public String getValue() {
-        return value;
+        return value.toJson();
     }
 }
